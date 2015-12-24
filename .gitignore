@@ -1,0 +1,7 @@
+################################
+# malpaw.vagrant.elasticsearch #
+# .gitignore file              #
+################################
+
+.vagrant
+.vscode
