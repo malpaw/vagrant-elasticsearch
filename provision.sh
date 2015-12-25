@@ -26,5 +26,7 @@ sudo chmod -x /etc/elasticsearch/elasticsearch.yml
 sudo chmod -x /etc/default/elasticsearch
 
 # set service autostart
-sudo update-rc.d elasticsearch defaults
-sudo service elasticsearch start
+sudo /bin/systemctl daemon-reload
+sudo /bin/systemctl enable elasticsearch.service
+sudo /bin/systemctl start elasticsearch.service
+
